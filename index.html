@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Obihiro Pioneer Archive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { 
             background-color: #ffffff; 
@@ -19,7 +20,7 @@
             width: 100%; 
             border-collapse: collapse; 
             margin-top: 10px; 
-            table-layout: fixed; 
+            table-layout: auto; 
             background-color: #ffffff
         }
         td { 
@@ -40,10 +41,14 @@
             margin: 0 auto;
         }
         @media (max-width: 768px) {
-          .banner {
-        width: 80%;
-        height: auto; /* Maintains aspect ratio */
-          }
+            table {
+               width: 100%; /* Ensures the table is always full width on smaller screens */
+               font-size: 0.9em; /* Optionally reduce text size for smaller screens */
+            }
+            .banner {
+               width: 100%; /* Full width for banner image on mobile */
+               height: auto;
+            }
         }
     </style>
 </head>
