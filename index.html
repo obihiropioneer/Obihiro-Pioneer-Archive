@@ -22,11 +22,13 @@
             margin-top: 10px;
             table-layout: auto;
         }
+        tr { border-bottom: 1px dashed lightgray; }
         td {
             padding: 8px;
             text-align: left;
             border: none;
         }
+        table tr:last-child { border-bottom: none; }
         table td:nth-child(1) a { white-space: nowrap; }
         table td:nth-child(1) { width: 18%; }
         table td:nth-child(2) { width: 100%; }
@@ -58,16 +60,16 @@
             width: 100%;
         }
         @media screen and (max-width: 481px) {
-            body { padding: 10px; }
+            body { padding: 5px; }
             table {
-                font-size: 0.9em;
+                font-size: 0.8em;
                 overflow-x: auto;
                 display: block;
             }
             h2 { font-size: 1.1em; margin-top: 20px; }
             .banner { width: 100%; height: auto; }
-            a {font-size: 0.9em; }
-            p.description { fontsize: 0.9em; }
+            a {font-size: 0.8em; }
+            p.description { font-size: 0.8em; }
         }
     </style>
 </head>
